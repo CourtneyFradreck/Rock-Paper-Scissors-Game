@@ -6,3 +6,11 @@ alert("You chose " + player);
 let computer = Math.floor(Math.random() * game.length); // a number from 0 to 2
 let randomItem = game[computer]; // rock, paper or scissors
 alert("Computer chose " + randomItem); // prints the random item
+
+if (computer === player) {
+  alert("It's a Draw! Both You and The Computer Chose The Same Item");
+} else if (computer === "Rock" && player === "Paper") {
+  alert("Computer Won!");
+} else {
+  alert("You chose an invalid Property");
+}
