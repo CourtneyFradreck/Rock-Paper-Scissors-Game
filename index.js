@@ -1,6 +1,10 @@
 alert("Hey there!! Let's Play a Game");
 let game = ["Rock", "Paper", "Scissors"];
 let player = prompt("Choose between Rock, Paper or Scissors");
+while (player !== "Rock" && player !== "Paper" && player !== "Scissors") {
+  alert("Invalid choice. Please choose between Rock, Paper or Scissors");
+  player = prompt("Choose between Rock, Paper or Scissors");
+}
 alert("You chose " + player);
 
 let computer = Math.floor(Math.random() * game.length); // computer's index..e.g number 0, 1, 2
