@@ -25,6 +25,4 @@ if (player === randomItem) {
   alert("Computer Won!");
 } else if (player === "Scissors" && randomItem === "Paper") {
   alert("You Won!");
-} else {
-  alert("You chose an invalid Property");
 }
