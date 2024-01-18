@@ -10,25 +10,23 @@ alert("You chose " + player);
 let computer = Math.floor(Math.random() * game.length); // computer's index..e.g number 0, 1, 2
 let randomItem = game[computer]; // rock, paper or scissors....computer's random choice
 alert("Computer chose " + randomItem); // prints the random item
-document.write("You chose " + player + "<br>");
-document.write("Computer chose " + randomItem + "<br>");
+alert("You chose " + player + "<br>");
+alert("Computer chose " + randomItem + "<br>");
 
 if (player === randomItem) {
-  document.write(
-    "It's a Draw! Both You and The Computer Chose The Same Item<br>"
-  );
+  alert("It's a Draw! Both You and The Computer Chose The Same Item<br>");
 } else if (player === "Rock" && randomItem === "Paper") {
-  document.write("Computer Won!<br>");
+  alert("Computer Won!<br>");
 } else if (player === "Rock" && randomItem === "Scissors") {
-  document.write("You Won!<br>");
+  alert("You Won!<br>");
 } else if (player === "Paper" && randomItem === "Rock") {
-  document.write("You Won!<br>");
+  alert("You Won!<br>");
 } else if (player === "Paper" && randomItem === "Scissors") {
-  document.write("Computer Won!<br>");
+  alert("Computer Won!<br>");
 } else if (player === "Scissors" && randomItem === "Rock") {
-  document.write("Computer Won!<br>");
+  alert("Computer Won!<br>");
 } else if (player === "Scissors" && randomItem === "Paper") {
-  document.write("You Won!<br>");
+  alert("You Won!<br>");
 }
 do {
   // your game code here
