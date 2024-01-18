@@ -30,3 +30,7 @@ if (player === randomItem) {
 } else if (player === "Scissors" && randomItem === "Paper") {
   document.write("You Won!<br>");
 }
+do {
+  // your game code here
+  let answer = prompt("Do you want to play again? (y/n)");
+} while (answer === "y");
