@@ -29,13 +29,13 @@ function playRound(HumanChoice, ComputerChoice){
 
   //conditional statements to determine the winner
   if (HumanChoice === ComputerChoice) {
-    console.log("Its a tie.");
+    console.log("Its a tie!");
   }else if(HumanChoice === "rock" && ComputerChoice === "scissors" || HumanChoice === "scissors" && ComputerChoice === "paper" || HumanChoice === "paper" && ComputerChoice === "rock"
   ){
-    console.log(`You win ${HumanChoice} beats ${ComputerChoice}`);
+    console.log(`You win! ${HumanChoice} beats ${ComputerChoice}`);
     HumanScore++;
   }else{
-    console.log(`You lose ${ComputerChoice} beats ${HumanChoice}`);
+    console.log(`You lose! ${ComputerChoice} beats ${HumanChoice}`);
     ComputerScore++;
   }
 
